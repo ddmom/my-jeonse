@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>전세가율 계산기</title>
+
+  <!-- PWA 설치 -->
+  <link rel="manifest" href="manifest.json"/>
+
+  <!-- iPhone 아이콘 설정 -->
+  <link rel="apple-touch-icon" href="icon-192.png"/>
+
+  <meta name="theme-color" content="#ffffff"/>
+
+  <!-- Service Worker -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+  </script>
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Streamlit 웹앱 주소 -->
+  <iframe src="https://your-streamlit-app.streamlit.app"></iframe>
+</body>
+</html>
