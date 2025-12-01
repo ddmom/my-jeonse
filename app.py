@@ -4,7 +4,11 @@ import plotly.graph_objects as go
 
 APP_TITLE = "전세가아드"
 
-
+st.set_page_config(
+    page_title="jeonseguard",
+    page_icon="icon-1024.png",  # <--- 변환된 파일명으로 연결했습니다!
+    layout="centered"
+)
 ############################################################
 # 0. 네이버 부동산 검색 URL 만들기
 ############################################################
